@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet"href="main.css">
+</head>
+<body>
+ <!--   <div class="alert-box" id="alert-box">
+        <p id="yunmi">Alert 박스</p>
+        <button onclick="알림창닫기('alert-box')">닫기
+        </button>
+    </div>
+    <button onclick="알림창열기('alert-box')">버튼
+    </button>-->
+    <div class="alert-box" id="alert2">
+        <p style="font-size: 2rem">메롱</p>
+        <button onclick="알림창닫기('alert2')">이제 안녕
+        </button>
+    </div>
+        <button onclick="알림창열기('alert2')">클릭하세요★
+    <script>
+        
+    function 알림창열기(아이디){
+        console.log("컴퓨터: 제가 전달받은 값은", 아이디, "입니다!")
+        document.getElementById(아이디).style.display='block';
+    }
+        
+    function 알림창닫기(a){
+        document.getElementById(a).style.display='none';
+    }
+        
+    </script>
+ 
+</body>
+</html>
