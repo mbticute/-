@@ -18,16 +18,22 @@
         <button onclick="알림창닫기('alert2')">이제 안녕
         </button>
     </div>
-        <button onclick="알림창열기('alert2')">클릭하세요★
+        <button onclick="알림창열기('alert2')" id="mimi">클릭하세요★
+        </button>
     <script>
         
     function 알림창열기(아이디){
         console.log("컴퓨터: 제가 전달받은 값은", 아이디, "입니다!")
         document.getElementById(아이디).style.display='block';
+        document.getElementById("mimi").style.display='none';
+        
     }
         
     function 알림창닫기(a){
         document.getElementById(a).style.display='none';
+        document.getElementById("mimi").style.display='block';
+        document.getElementById("mimi").innerHTML="😜"
+        window.alert('속았지')    
     }
         
     </script>
